@@ -1,0 +1,55 @@
+.ToDo {
+    padding: 16px 0;
+
+    font-size: $font-md;
+    border-bottom: 1px dashed $text-color;
+
+    .text{
+        width: 100%;
+        
+        &__finished{
+            opacity: 60%;
+            text-decoration: line-through;
+        }
+    }
+
+    .btn{
+        cursor: pointer;
+
+        &__finished{
+            width: $font-sm;
+            height: $font-sm;
+            margin-right: $font-sm;
+
+            background-color: transparent;
+
+            border: 1px solid $text-color;
+            border-radius: 20%;
+
+            &__checked {
+                .checked-box{
+                    width: 100%;
+                    height: 100%;
+                    background-color: $text-color;
+                    border: solid 2px $bg-color;
+                    border-radius: 20%;
+                }
+            }
+        }
+
+        &__delete{
+            width: $font-md;
+            height: $font-md;
+            
+            color: $text-color;
+            background-color: transparent;
+            border-radius: 2px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                stroke: $text-color;
+            }
+        }
+    }
+}

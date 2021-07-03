@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;1,600&family=Montserrat:wght@300;400;500;700&display=swap');
+@import 'variables';
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: $bg-color;
+}
+
+svg{
+    pointer-events: none;
+}
+
+
+//clear default style
+input, button {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 0;
+    background-color: transparent;
+}
+input::-ms-clear { display: none; }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container{
+    //padding-left: 100px;
+    //padding-right:100px;
+}
+
+//Flexbox style
+.flex {
+    display: flex;
+
+    &-col{
+        flex-direction: column;
+    }
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-jc-fs{
+        justify-content: flex-start;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+
+    &-ai-fe{
+        align-items: flex-end;
+    }
+}

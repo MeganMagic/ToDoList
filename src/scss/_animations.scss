@@ -1,0 +1,15 @@
+@keyframes slide-out-to-right {
+    0%{
+        opacity: 100%;
+        left: 0%;
+    }
+    100%{
+        opacity: 0%;
+        left: 50%;
+    }
+}
+
+.slide-out-to-right{
+    position: relative;
+    animation: slide-out-to-right 600ms ease-out forwards;
+}
