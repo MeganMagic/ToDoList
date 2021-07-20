@@ -59,14 +59,87 @@
 
     .input-toDo-desc{
         width: 100%;
+        height: 100%;
         margin: 30px 0px;
-        padding: 0 16px;
+        // padding: 0 16px;
 
-        font-size: $font-sm;
+        color: $text-color;
+        font-size: $font-md;
+        font-weight: 300;
+
+        
 
         &::placeholder{
             color: $text-color;
             opacity: 50%;
+        }
+    }
+    textarea{
+        resize: none;
+        &::-webkit-scrollbar{
+            width: 10px;
+
+            &-track{
+                background-color: $bg-color;
+                border-radius: 10px;
+            }
+
+            &-thumb{
+                background-color: $bg-color;
+                border: 1px solid $text-color;
+                border-radius: 10px;
+                box-shadow: 0px 3px 0px $text-color;
+            }
+        }
+    }
+
+    .toolBar{
+        // border-top: 1px solid;
+        width: 100%;
+        height: 120px;
+    }
+
+    .btn{
+        cursor: pointer;
+
+        &-toDo-save{
+            position: relative;
+
+            width: 160px;
+            height: 75px;
+
+            border-radius: 50%;
+            border: solid 1px;
+            box-shadow: 0px 3px 0px $text-color;
+
+            font-size: $font-md;
+            font-weight: 700;
+
+            &:active{
+                box-shadow: none;
+                top: 3px;
+            }
+        }
+
+        &__finished{
+            width: $font-sm;
+            height: $font-sm;
+            margin-right: $font-sm;
+
+            background-color: transparent;
+
+            border: 1px solid $text-color;
+            border-radius: 20%;
+
+            &__checked {
+                .checked-box{
+                    width: 100%;
+                    height: 100%;
+                    background-color: $text-color;
+                    border: solid 2px $bg-color;
+                    border-radius: 20%;
+                }
+            }
         }
     }
 }

@@ -61,7 +61,7 @@ const saveDataOnLocalStorage = () => {
     window.localStorage.setItem("toDoStore", JSON.stringify(currentState));    
 }
 store.subscribe(saveDataOnLocalStorage);
-store.subscribe(() => console.log(store.getState()));
+//store.subscribe(() => console.log(store.getState()));
 
 export const actionCreators = {
     addToDo,

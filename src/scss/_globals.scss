@@ -28,7 +28,7 @@ svg{
 
 
 //clear default style
-input, button {
+input, button, textarea {
     outline: none;
     border: none;
     -webkit-appearance: none;
@@ -36,6 +36,8 @@ input, button {
             appearance: none;
     padding: 0;
     background-color: transparent;
+    font-family: inherit;
+    color: inherit;
 }
 input::-ms-clear { display: none; }
 
