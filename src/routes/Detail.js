@@ -31,6 +31,7 @@ function Detail({ toDo, updateToDo }) {
         setDesc(e.target.value)
     }
     function handleIsFinishedChange(e) {
+        e.preventDefault();
         setIsFinished(!isFinished);
     }
 
