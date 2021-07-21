@@ -31,6 +31,7 @@
 
     .input-toDo-text{
         padding: 24px 0;
+        width: 100%;
 
         border-bottom: solid 1px $text-color;
 
@@ -66,13 +67,6 @@
         color: $text-color;
         font-size: $font-md;
         font-weight: 300;
-
-        
-
-        &::placeholder{
-            color: $text-color;
-            opacity: 50%;
-        }
     }
     textarea{
         resize: none;

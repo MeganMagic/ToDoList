@@ -40,6 +40,15 @@ input, button, textarea {
     color: inherit;
 }
 input::-ms-clear { display: none; }
+input {
+    &::placeholder, 
+    &::-webkit-input-placeholder,
+    &::-ms-input-placeholder, 
+    &::-moz-placeholder {
+        color: $text-color;
+        opacity: 50%;
+    }
+}
 
 ul {
     list-style-type: none;
