@@ -42,8 +42,10 @@ input, button, textarea {
 input::-ms-clear { display: none; }
 input {
     &::placeholder, 
-    &::-webkit-input-placeholder,
-    &::-ms-input-placeholder, 
+    &::-webkit-input-placeholder {
+        color: $text-color;
+        opacity: 50%;
+    }
     &::-moz-placeholder {
         color: $text-color;
         opacity: 50%;
